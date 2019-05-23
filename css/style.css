@@ -1,0 +1,42 @@
+@import url('normalize.css');
+@import url('reset.css');
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.main {
+  background: #000;
+}
+
+.main-icon {
+  width: 50%;
+}
+
+.captain {
+
+}
+
+.iron {
+
+}
+
+.thor {
+
+}
+
+.hulk {
+
+}
+
+.hwak {
+
+}
+
+.widow {
+
+}
+
+.series {
+
+}
