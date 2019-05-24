@@ -75,63 +75,68 @@
     margin-left: -40px;
 }
 
+/* 성진꺼 */
+
 .main {
   background: #000;
   text-align: center;
 }
 
 .main-avengers {
-  width: 50%;
+  display: none;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .captain_icon {
+  display: none;
   position: absolute;
   width: 10%;
-  
   cursor: pointer;
 }
 
 .hawk_icon {
+  display: none;
   position: absolute;
   width: 11%;
-  top: 19%;
-  left: 15%;
   cursor: pointer;
 }
 
 .hulk_icon {
+  display: none;
   position: absolute;
   width: 23%;
   right: 5%;
-  top: 45%;
   cursor: pointer;
 }
 
 .iron_icon {
+  display: none;
   position: absolute;
   width: 10%;
-  top: 16%;
   left: 38%;
   cursor: pointer;
 
 }
 
 .thor_icon {
+  display: none;
   position: absolute;
   width: 15%;
-  top: 16%;
-  right: 23%;
   cursor: pointer;
 }
 
 .widow_icon {
+  display: none;
   position: absolute;
   width: 10%;
   top: 59%;
   right: 39%;
   cursor: pointer;
-
+  opacity: 0;
 }
 
 .captain {
