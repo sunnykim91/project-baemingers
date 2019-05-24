@@ -45,41 +45,41 @@ const captain_icon1 = document.querySelector('.captain_icon');
 })();
 
 
-window.addEventListener('scroll', function() {
-  // 메인 영역
-  if(scrollY > 0 && scrollY < 300) scrollTo(0, captain_icon.offsetTop);
-  if(scrollY > captain_icon.offsetTop - 300 && scrollY < captain_icon.offsetTop) scrollTo(0, mainBlack.offsetTop);
+// window.addEventListener('scroll', function() {
+//   // 메인 영역
+//   if(scrollY > 0 && scrollY < 300) scrollTo(0, captain_icon.offsetTop);
+//   if(scrollY > captain_icon.offsetTop - 300 && scrollY < captain_icon.offsetTop) scrollTo(0, mainBlack.offsetTop);
 
-  // 캡틴 영역
-  if(scrollY > captain_icon.offsetTop && scrollY < captain_icon.offsetTop + 300) scrollTo(0, iron_icon.offsetTop);
-  if(scrollY > iron_icon.offsetTop - 300 && scrollY < iron_icon.offsetTop) scrollTo(0, captain_icon.offsetTop);
+//   // 캡틴 영역
+//   if(scrollY > captain_icon.offsetTop && scrollY < captain_icon.offsetTop + 300) scrollTo(0, iron_icon.offsetTop);
+//   if(scrollY > iron_icon.offsetTop - 300 && scrollY < iron_icon.offsetTop) scrollTo(0, captain_icon.offsetTop);
 
-  // 아이언맨 영역
-  if(scrollY > iron_icon.offsetTop && scrollY < iron_icon.offsetTop + 300) scrollTo(0, thor_icon.offsetTop);
-  if(scrollY > thor_icon.offsetTop - 300 && scrollY < thor_icon.offsetTop) scrollTo(0, iron_icon.offsetTop);
+//   // 아이언맨 영역
+//   if(scrollY > iron_icon.offsetTop && scrollY < iron_icon.offsetTop + 300) scrollTo(0, thor_icon.offsetTop);
+//   if(scrollY > thor_icon.offsetTop - 300 && scrollY < thor_icon.offsetTop) scrollTo(0, iron_icon.offsetTop);
 
-  // 토르 영역
-  if(scrollY > thor_icon.offsetTop && scrollY < thor_icon.offsetTop + 300) scrollTo(0, hulk_icon.offsetTop);
-  if(scrollY > hulk_icon.offsetTop - 300 && scrollY < hulk_icon.offsetTop) scrollTo(0, thor_icon.offsetTop);
+//   // 토르 영역
+//   if(scrollY > thor_icon.offsetTop && scrollY < thor_icon.offsetTop + 300) scrollTo(0, hulk_icon.offsetTop);
+//   if(scrollY > hulk_icon.offsetTop - 300 && scrollY < hulk_icon.offsetTop) scrollTo(0, thor_icon.offsetTop);
   
-  // 헐크 영역
-  if(scrollY > hulk_icon.offsetTop && scrollY < hulk_icon.offsetTop + 300) scrollTo(0, hawk_icon.offsetTop);
-  if(scrollY > hawk_icon.offsetTop - 300 && scrollY < hawk_icon.offsetTop) scrollTo(0, hulk_icon.offsetTop);
+//   // 헐크 영역
+//   if(scrollY > hulk_icon.offsetTop && scrollY < hulk_icon.offsetTop + 300) scrollTo(0, hawk_icon.offsetTop);
+//   if(scrollY > hawk_icon.offsetTop - 300 && scrollY < hawk_icon.offsetTop) scrollTo(0, hulk_icon.offsetTop);
   
-  // 호크아이 영역
-  if(scrollY > hawk_icon.offsetTop && scrollY < hawk_icon.offsetTop + 300) scrollTo(0, widow_icon.offsetTop);
-  if(scrollY > widow_icon.offsetTop - 300 && scrollY < widow_icon.offsetTop) scrollTo(0, hawk_icon.offsetTop);
+//   // 호크아이 영역
+//   if(scrollY > hawk_icon.offsetTop && scrollY < hawk_icon.offsetTop + 300) scrollTo(0, widow_icon.offsetTop);
+//   if(scrollY > widow_icon.offsetTop - 300 && scrollY < widow_icon.offsetTop) scrollTo(0, hawk_icon.offsetTop);
   
-  // 위도우 영역
-  if(scrollY > widow_icon.offsetTop && scrollY < widow_icon.offsetTop + 300) scrollTo(0, series.offsetTop);
-  if(scrollY > series.offsetTop - 300 && scrollY < series.offsetTop) scrollTo(0, widow_icon.offsetTop);
-})
+//   // 위도우 영역
+//   if(scrollY > widow_icon.offsetTop && scrollY < widow_icon.offsetTop + 300) scrollTo(0, series.offsetTop);
+//   if(scrollY > series.offsetTop - 300 && scrollY < series.offsetTop) scrollTo(0, widow_icon.offsetTop);
+// })
 
 
   
-mainBlack.addEventListener('click', function(e) {
-  scrollTo(0, eval(e.target.classList.value).offsetTop);
-});
+// mainBlack.addEventListener('click', function(e) {
+//   scrollTo(0, eval(e.target.classList.value).offsetTop);
+// });
 
 
 function myMove() {
@@ -129,3 +129,22 @@ jQuery(document).ready(function ($) {
   });
 
 });
+
+const clickshowhero = document.querySelector('.clickshowyourhero');
+const showhero = document.querySelector('.showyourhero');
+
+const arrhero = ['블랙펜서', '블랙위도우', '캡틴아메리카', '닥터스트레인지', '팔콘', '그루트', '로켓', '헐크', '아이언맨', '가모라', '비전', '토르', '워머신', '스파이더맨', '스타로드', '윈터솔져', '웡', '오코예', '슈리', '네뷸라', '드랙스'];
+clickshowhero.addEventListener('click',function(){  
+  showhero.innerHTML = arrhero[Math.floor(Math.random() * 21)];
+});
+
+$ = function (id) {
+  return document.getElementById(id);
+}
+
+var show = function (id) {
+  $(id).style.display = 'block';
+}
+var hide = function (id) {
+  $(id).style.display = 'none';
+}
