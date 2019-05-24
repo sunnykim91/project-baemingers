@@ -1,0 +1,69 @@
+.thumbnail{
+  display: block;
+  padding: 4px;
+  background-color: black;
+  border: 5px solid black;
+  border-radius: 4px;
+  transition: border .2s ease-in-out;
+}
+.series{
+  background-color: black;
+}
+.item {
+  width: 100%;
+}
+.slide{
+  margin-top: 15px;
+  width: 450px;
+}
+.slidetext{
+  position: absolute;
+  bottom:  10%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+
+.hide-bullets{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    list-style:none;
+    margin-left: -40px;
+    
+}
+.hide-bullets2{
+    position: absolute;
+    top: 165px;
+    right: 50px;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    list-style:none;
+    margin-left: -40px;
+}
+.hide-bullets3{
+    position: absolute;
+    top: 325px;
+    right: 50px;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    list-style:none;
+    margin-left: -40px;
+}
+.hide-bullets4{
+    position: absolute;
+    top: 485px;
+    right: 50px;
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    list-style:none;
+    margin-left: -40px;
+}
+
