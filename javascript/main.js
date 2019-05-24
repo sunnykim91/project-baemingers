@@ -1,29 +1,3 @@
-
-jQuery(document).ready(function ($) {
-  //set here the speed to change the slides in the carousel
-  $('#myCarousel').carousel({
-    interval: 5000
-  });
-
-  //Loads the html to each slider. Write in the "div id="slide-content-x" what you want to show in each slide
-  $('#carousel-text').html($('#slide-content-0').html());
-
-  //Handles the carousel thumbnails
-  $('[id^=carousel-selector-]').click(function () {
-    var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-    var id = parseInt(id);
-    $('#myCarousel').carousel(id);
-  });
-
-  $('#myCarousel').on('slid.bs.carousel', function (e) {
-    var id = $('.item.active').data('slide-number');
-    $('[id^=carousel-selector-]').removeClass('redhover');
-    $('#carousel-selector-' + id).addClass('redhover');
-    $('#carousel-text').html($('#slide-content-' + id).html());
-  });
-
-});
-
 const mainBlack = document.querySelector('.main');
 const avengers = document.querySelector('.main-avengers');
 const captain_icon = document.querySelector('.main-captain');
@@ -58,6 +32,11 @@ const captain_icon1 = document.querySelector('.captain_icon');
   
   widow_icon.style.width = `${window.innerWidth}px`;
   widow_icon.style.height = `${window.innerHeight}px`;
+
+  series.style.width = `${window.innerWidth}px`;
+  series.style.height = `${window.innerHeight}px`;
+
+
 })();
   
 
@@ -121,3 +100,32 @@ function myMove() {
 
 myMove(captain_icon1);
 
+
+
+
+// 써니형님
+
+jQuery(document).ready(function ($) {
+  //set here the speed to change the slides in the carousel
+  $('#myCarousel').carousel({
+    interval: 5000
+  });
+
+  //Loads the html to each slider. Write in the "div id="slide-content-x" what you want to show in each slide
+  $('#carousel-text').html($('#slide-content-0').html());
+
+  //Handles the carousel thumbnails
+  $('[id^=carousel-selector-]').click(function () {
+    var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+    var id = parseInt(id);
+    $('#myCarousel').carousel(id);
+  });
+
+  $('#myCarousel').on('slid.bs.carousel', function (e) {
+    var id = $('.item.active').data('slide-number');
+    $('[id^=carousel-selector-]').removeClass('redhover');
+    $('#carousel-selector-' + id).addClass('redhover');
+    $('#carousel-text').html($('#slide-content-' + id).html());
+  });
+
+});
