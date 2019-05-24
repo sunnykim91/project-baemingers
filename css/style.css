@@ -76,10 +76,61 @@
 
 .main {
   background: #000;
+  text-align: center;
 }
 
-.main-icon {
+.main-avengers {
   width: 50%;
+  cursor: pointer;
+}
+
+.captain_icon {
+  position: absolute;
+  width: 10%;
+  
+  cursor: pointer;
+}
+
+.hawk_icon {
+  position: absolute;
+  width: 11%;
+  top: 19%;
+  left: 15%;
+  cursor: pointer;
+}
+
+.hulk_icon {
+  position: absolute;
+  width: 23%;
+  right: 5%;
+  top: 45%;
+  cursor: pointer;
+}
+
+.iron_icon {
+  position: absolute;
+  width: 10%;
+  top: 16%;
+  left: 38%;
+  cursor: pointer;
+
+}
+
+.thor_icon {
+  position: absolute;
+  width: 15%;
+  top: 16%;
+  right: 23%;
+  cursor: pointer;
+}
+
+.widow_icon {
+  position: absolute;
+  width: 10%;
+  top: 59%;
+  right: 39%;
+  cursor: pointer;
+
 }
 
 .captain {
