@@ -1,12 +1,12 @@
 const mainBlack = document.querySelector('.main');
-const avengers = document.querySelector('.main-avengers');
+const avengers = document.querySelector('.series_icon');
 const captain_icon = document.querySelector('.main-captain');
 const iron_icon = document.querySelector('.main-iron');
 const thor_icon = document.querySelector('.main-thor');
 const hulk_icon = document.querySelector('.main-hulk');
 const hawk_icon = document.querySelector('.main-hawk');
 const widow_icon = document.querySelector('.main-widow');
-const series = document.querySelector('.series');
+const series_icon = document.querySelector('.series');
 
 const captain_icon1 = document.querySelector('.captain_icon');
 const hawk_icon1 = document.querySelector('.hawk_icon');
@@ -15,15 +15,17 @@ const iron_icon1 = document.querySelector('.iron_icon');
 const thor_icon1 = document.querySelector('.thor_icon');
 const widow_icon1 = document.querySelector('.widow_icon');
 
+const text = document.querySelector('.text');
+
 
 avengersMove(avengers);
 
-setTimeout(function(){captainMove(captain_icon1)}, 1800);
-setTimeout(function(){hawkMove(hawk_icon1)}, 2500);
-setTimeout(function(){hulkMove(hulk_icon1)}, 3000);
-setTimeout(function(){ironMove(iron_icon1)}, 3800);
-setTimeout(function(){thorMove(thor_icon1)}, 4500);
-setTimeout(function(){widowMove(widow_icon1)}, 5000);
+setTimeout(function(){captainMove(captain_icon1)}, 4000);
+setTimeout(function(){hawkMove(hawk_icon1)}, 5800);
+setTimeout(function(){hulkMove(hulk_icon1)}, 7000);
+setTimeout(function(){ironMove(iron_icon1)}, 8600);
+setTimeout(function(){thorMove(thor_icon1)}, 9000);
+setTimeout(function(){widowMove(widow_icon1)}, 10100);
 
 
 
@@ -52,8 +54,8 @@ setTimeout(function(){widowMove(widow_icon1)}, 5000);
   widow_icon.style.width = `${window.innerWidth}px`;
   widow_icon.style.height = `${window.innerHeight}px`;
 
-  series.style.width = `${window.innerWidth}px`;
-  series.style.height = `${window.innerHeight}px`;
+  series_icon.style.width = `${window.innerWidth}px`;
+  series_icon.style.height = `${window.innerHeight}px`;
 })();
   
 
@@ -90,11 +92,9 @@ setTimeout(function(){widowMove(widow_icon1)}, 5000);
 
 
 // 클릭시 각 영역으로 이동  
-// mainBlack.addEventListener('click', function(e) {
-//   scrollTo(0, eval(e.target.classList.value).offsetTop);
-// });
 
 mainBlack.addEventListener('click', function(e) {
+  console.log(e.target);
   window.scroll({
     behavior: 'smooth',
     left: 0,
@@ -108,7 +108,7 @@ mainBlack.addEventListener('click', function(e) {
 // 메인로고
   function avengersMove() {
     let x = 350;
-    let id = setInterval(frame, 3);
+    let id = setInterval(frame, 15);
 
     function frame() {
       avengers.style.display = 'block';
@@ -125,7 +125,7 @@ mainBlack.addEventListener('click', function(e) {
 function captainMove() {
   let x = 0;
   let y = -58;
-  let id = setInterval(frame, 5);
+  let id = setInterval(frame, 20);
 
   function frame() {
     captain_icon1.style.display = 'block';
@@ -144,7 +144,7 @@ function captainMove() {
 function hawkMove() {
   let x = 0;
   let y = -4;
-  let id = setInterval(frame, 5);
+  let id = setInterval(frame, 20);
 
   function frame() {
     hawk_icon1.style.display = 'block';
@@ -162,7 +162,7 @@ function hawkMove() {
 // 헐크
 function hulkMove() {
   let y = -4;
-  let id = setInterval(frame, 5);
+  let id = setInterval(frame, 20);
 
   function frame() {
     hulk_icon1.style.display = 'block';
@@ -178,7 +178,7 @@ function hulkMove() {
 // 아이언맨
 function ironMove() {
   let y = 0;
-  let id = setInterval(frame, 5);
+  let id = setInterval(frame, 20);
 
   function frame() {
     iron_icon1.style.display = 'block';
@@ -195,7 +195,7 @@ function ironMove() {
 function thorMove() {
   let x = 0;
   let y = 0;
-  let id = setInterval(frame, 5);
+  let id = setInterval(frame, 20);
 
   function frame() {
     thor_icon1.style.display = 'block';
@@ -210,14 +210,14 @@ function thorMove() {
   }
 }
 
-// 토르
+// 위도우
 function widowMove() {
   let x = 0;
   let id = setInterval(frame, 100);
 
   function frame() {
     widow_icon1.style.display = 'block';
-    if (x === 1) {
+    if (x > 1) {
       clearInterval(id);
     } else {
       x += 0.1;
@@ -225,6 +225,97 @@ function widowMove() {
     }
   }
 }
+
+
+text.innerHTML += `<table class="captain-info" style="top: ${captain_icon.offsetTop+300}px; right: 60px;">
+<tr>
+  <td>본명 : 스티브 로져스</td>
+</tr>
+<tr>
+  <td>신장 : 188cm</td>
+</tr>
+<tr>
+  <td>체중 : 100kg</td>
+</tr>
+<tr>
+  <td>직업 : <br>미국 보안책임자, 과거 미합중국 육군
+  보병대위, 일러스트레이터, 실드 요원</td>
+</tr>
+</table>
+<table class="ironman-info" style="top: ${iron_icon.offsetTop+300}px; right: 60px;">
+<tr>
+  <td>본명 : 앤서니 에드워드 "토니" 스타크</td>
+</tr>
+<tr>
+  <td>신장 : 185cm (맨몸) / 198cm (갑옷 착용)</td>
+</tr>
+<tr>
+  <td>체중 : 102kg (맨몸) / 193kg (갑옷 착용)</td>
+</tr>
+<tr>
+  <td>직업 : <br>1.플레이보이,억만장자,대인배,나르시시스트+자기애+소시오패스+자기 중심성 성격자<br>
+  2.사업가[+오너(소유자),CEO,기업가]<br>
+  3.발견자,창조자,개척자,선구자,확장자,혁신가,과학(+공학 과학,수학,기술,예술)의 그자체(아이콘),엔지니어(공학자,기술자,정비공), 발명가, ,연구자,탐구자,학자,미래학자,과학자(+매드 사이언티스트),개발자,<br>
+  4.전 정치인=전 실드 국장,전 국방부 장관,리더(지도자중 지도자)</td>
+</tr>
+</table>
+<table class="thor-info" style="top: ${thor_icon.offsetTop+300}px; right: 60px;">
+<tr>
+  <td>본명 : 토르 오딘슨</td>
+</tr>
+<tr>
+  <td>국적 : 아스가르드</td>
+</tr>
+<tr>
+  <td>나이 : 약 1500세 전후</td>
+</tr>
+<tr>
+  <td>직위 : <br>아스가르드 제1왕자, 아스가르드의 왕</td>
+</tr>
+</table>
+<table class="hulk-info" style="top: ${hulk_icon.offsetTop+300}px; right: 60px;">
+<tr>
+  <td>본명 : 로버트 브루스 배너</td>
+</tr>
+<tr>
+  <td>나이 : 49세</td>
+</tr>
+<tr>
+  <td>소속 : 컬버 대학교 연구원, 어벤져스</td>
+</tr>
+<tr>
+  <td>직위 : 박사</td>
+</tr>
+</table>
+<table class="hawk-info" style="top: ${hawk_icon.offsetTop+300}px; right: 60px;">
+<tr>
+  <td>본명 : 클린튼 프랜시스 바튼</td>
+</tr>
+<tr>
+  <td>신장 : 178cm</td>
+</tr>
+<tr>
+  <td>체중 : 82kg</td>
+</tr>
+<tr>
+  <td>직업 : S.H.I.E.L.D. 요원</td>
+</tr>
+</table>
+<table class="widow-info" style="top: ${widow_icon.offsetTop+300}px; right: 60px;">
+<tr>
+  <td>본명 : 나탈리야 알리야노브나 로마노바</td>
+</tr>
+<tr>
+  <td>국적 :소비에트 연방/러시아 미국</td>
+</tr>
+<tr>
+  <td>나이 : 38세</td>
+</tr>
+<tr>
+  <td>직업 : 쉴드 요원</td>
+</tr>
+</table>
+`;
 
 
 
@@ -237,7 +328,7 @@ function widowMove() {
 jQuery(document).ready(function ($) {
   //set here the speed to change the slides in the carousel
   $('#myCarousel').carousel({
-    interval: 5000
+    interval: 2000
   });
 
   //Loads the html to each slider. Write in the "div id="slide-content-x" what you want to show in each slide

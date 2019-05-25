@@ -21,9 +21,11 @@
   width: 100%;
 }
 .slide{
-  margin-top: 15px;
-  width: 450px;
-}
+  margin-top: 10%;
+  margin-left: -11%;
+  width: 42%;
+  box-shadow: 0px 0px 35px white;
+ }
 .slidetext{
   position: absolute;
   bottom:  10%;
@@ -34,45 +36,41 @@
 
 
 .hide-bullets{
-    position: absolute;
-    top: 5px;
-    right: 50px;
-    display: flex;
-    width: 800px;
-    justify-content: space-around;
-    list-style:none;
-    margin-left: -40px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
     
 }
 .hide-bullets2{
-    position: absolute;
-    top: 165px;
-    right: 50px;
-    display: flex;
-    width: 800px;
-    justify-content: space-around;
-    list-style:none;
-    margin-left: -40px;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
 }
 .hide-bullets3{
-    position: absolute;
-    top: 325px;
-    right: 50px;
-    display: flex;
-    width: 800px;
-    justify-content: space-around;
-    list-style:none;
-    margin-left: -40px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
 }
 .hide-bullets4{
-    position: absolute;
-    top: 485px;
-    right: 50px;
-    display: flex;
-    width: 800px;
-    justify-content: space-around;
-    list-style:none;
-    margin-left: -40px;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
 }
 
 /* 성진꺼 */
@@ -82,7 +80,7 @@
   text-align: center;
 }
 
-.main-avengers {
+.series_icon {
   display: none;
   cursor: pointer;
   position: absolute;
@@ -139,30 +137,46 @@
   opacity: 0;
 }
 
-.captain {
-
+.captain-info {
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
 }
 
-.iron {
+ .ironman-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
 
-}
+ .thor-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
+ 
 
-.thor {
+ .hulk-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
+ 
 
-}
-
-.hulk {
-
-}
-
-.hwak {
-
-}
-
-.widow {
-
-}
-
-.series {
-
-}
+ .hawk-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
+ 
+ .widow-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
