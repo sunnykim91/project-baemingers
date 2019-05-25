@@ -5,38 +5,178 @@
   display:none;
 }
 
+.thumbnail{
+  display: block;
+  padding: 4px;
+  background-color: black;
+  border: 5px solid black;
+  border-radius: 4px;
+  transition: border .2s ease-in-out;
+}
+.series{
+  position: relative;
+  background-color: black;
+}
+.item {
+  width: 100%;
+}
+.slide{
+  margin-top: 10%;
+  margin-left: -11%;
+  width: 42%;
+  box-shadow: 0px 0px 35px white;
+ }
+.slidetext{
+  position: absolute;
+  bottom:  10%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+
+.hide-bullets{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
+    
+}
+.hide-bullets2{
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
+}
+.hide-bullets3{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
+}
+.hide-bullets4{
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* 성진꺼 */
+
 .main {
   background: #000;
+  text-align: center;
 }
 
-.main-icon {
-  width: 50%;
+.series_icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.captain {
+.captain_icon {
+  display: none;
+  position: absolute;
+  width: 10%;
+  cursor: pointer;
+}
+
+.hawk_icon {
+  display: none;
+  position: absolute;
+  width: 11%;
+  cursor: pointer;
+}
+
+.hulk_icon {
+  display: none;
+  position: absolute;
+  width: 23%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.iron_icon {
+  display: none;
+  position: absolute;
+  width: 10%;
+  left: 38%;
+  cursor: pointer;
 
 }
 
-.iron {
-
+.thor_icon {
+  display: none;
+  position: absolute;
+  width: 15%;
+  cursor: pointer;
 }
 
-.thor {
-
+.widow_icon {
+  display: none;
+  position: absolute;
+  width: 10%;
+  top: 59%;
+  right: 39%;
+  cursor: pointer;
+  opacity: 0;
 }
 
-.hulk {
-
+.captain-info {
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
 }
 
-.hwak {
+ .ironman-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
 
-}
+ .thor-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
+ 
 
-.widow {
+ .hulk-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
+ 
 
-}
-
-.series {
-
-}
+ .hawk-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
+ 
+ .widow-info{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+ }
