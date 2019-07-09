@@ -123,7 +123,7 @@
   cursor: pointer;
   opacity: 0;
 }
-
+/* 
 .popup{
   display: none;
   position: fixed;
@@ -134,87 +134,18 @@
   background: #FFF;
   z-index: 20;
   text-align: center;
+  font-size: 1.6em;
+}
+.popup p{
+  font-size: 4em;
 }
 
 
 #popup1 {
   -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
   box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
-}
-.apopup{
-  position: absolute;
-  left: 300px;
-  top: 300px;
-}
-.captain {
-  position: relative;
-}
-.captain-info{
-  color: white;
-  font-size: 1.2em;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-  width: 30%;
-}
-.iron {
-  position: relative;
-}
-.ironman-info{
-  color: white;
-  font-size: 1.2em;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-  width: 30%;
-}
-.thor {
-  position: relative;
-}
-.thor-info{
-  color: white;
-  font-size: 1.2em;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-  width: 30%;
-}
+} */
 
-.hulk {
-  position: relative;
-}
-.hulk-info{
-  color: white;
-  font-size: 1.2em;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-  width: 30%;
-}
-
-.hawk {
-  position: relative;
-}
-.hawk-info{
-  color: white;
-  font-size: 1.2em;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-  width: 30%;
-}
-
-.widow {
-  position: relative;
-}
-.widow-info{
-  color: white;
-  font-size: 1.2em;
-  position: absolute;
-  top: 35%;
-  left: 65%;
-  width: 30%;
-}
 
 .series {
 

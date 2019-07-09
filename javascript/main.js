@@ -88,7 +88,6 @@ setTimeout(function(){widowMove(widow_icon1)}, 5000);
 //   if(scrollY > series.offsetTop - 300 && scrollY < series.offsetTop) scrollTo(0, widow_icon.offsetTop);
 // })
 
-
  
 mainBlack.addEventListener('click', function(e) {
   window.scroll({
@@ -256,21 +255,23 @@ jQuery(document).ready(function ($) {
 
 });
 
-const clickshowhero = document.querySelector('.clickshowyourhero');
-const showhero = document.querySelector('.showyourhero');
+// const clickshowhero = document.querySelector('.clickshowyourhero');
+// const showhero = document.querySelector('.showyourhero');
 
-const arrhero = ['블랙펜서', '블랙위도우', '캡틴아메리카', '닥터스트레인지', '팔콘', '그루트', '로켓', '헐크', '아이언맨', '가모라', '비전', '토르', '워머신', '스파이더맨', '스타로드', '윈터솔져', '웡', '오코예', '슈리', '네뷸라', '드랙스'];
-clickshowhero.addEventListener('click',function(){  
-  showhero.innerHTML = arrhero[Math.floor(Math.random() * 21)];
-});
+// const arrhero = ['블랙펜서', '블랙위도우', '캡틴아메리카', '닥터스트레인지', '팔콘', '그루트', '로켓', '헐크', '아이언맨', '가모라', '비전', '토르', '워머신', '스파이더맨', '스타로드', '윈터솔져', '웡', '오코예', '슈리', '네뷸라', '드랙스'];
+// clickshowhero.addEventListener('click',function(){  
+//   showhero.innerHTML = arrhero[Math.floor(Math.random() * 21)];
+// });
 
-$ = function (id) {
-  return document.getElementById(id);
-}
+// $ = function (id) {
+//   return document.getElementById(id);
+// }
 
-var show = function (id) {
-  $(id).style.display = 'block';
-}
-var hide = function (id) {
-  $(id).style.display = 'none';
-}
+// var show = function (id) {
+//   $(id).style.display = 'block';
+// }
+// var hide = function (id) {
+//   $(id).style.display = 'none';
+// }
+
+
